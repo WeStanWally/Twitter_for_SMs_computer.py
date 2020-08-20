@@ -10,8 +10,8 @@ access_token_secret='nueq05KsarX1MswLg7HTiQQQxyqN76sGeuw20eUp2xEkQ'
 
 user = "@WeStanWally"
 
-auth = tweepy.OAuthHandler(keys['goaPYXDhXdPd4E845lVarMTQP'], keys['1ZUkEalRYupKLHhvwLpFIrvuT0AT7TRnUbCzQWxIzqBN19WcMf'])
-auth.set_access_token(keys['3307061003-rMfNBj0QlUVMQG1Hcob3Xpa0UtiEu0q81uICpbD'], keys['nueq05KsarX1MswLg7HTiQQQxyqN76sGeuw20eUp2xEkQ'])
+auth = tweepy.OAuthHandler(keys['consumer_key'], keys['consumer_secret'])
+auth.set_access_token(keys['access_token'], keys['access_token_secret'])
 api = tweepy.API(auth)
 
 def tweet():
